@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            height: 100vh ;
+        }
+        .box{
+            background-color: rgba(0, 0, 0, 0);
+            width: 150px;
+            height: 150px;
+            border: 4px solid white;
+
+            position: absolute;
+
+            animation: a1 5s  forwards 1s linear;
+        }
+        .box2{
+            background-color: rgba(0, 0, 0, 0);
+            width: 150px;
+            height: 150px;
+            border: 4px solid white;
+
+            position: absolute;
+
+            animation: a2 5s  forwards 1s linear;
+        }
+        
+
+        @keyframes a1{
+            from{
+                top: 0;
+                left: 0;
+        }
+            to{
+                top: 83%;
+                left:92%;
+            }
+        }
+        @keyframes a2{
+            from{
+                top: 0;
+                left: 92%;
+            }
+            to{
+                top: 83%;
+                left:0%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="box2"></div>
+    
+
+
+</body>
+</html>
